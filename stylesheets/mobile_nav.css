@@ -1,0 +1,91 @@
+/* CSS */
+.nav {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .nav-toggle-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .nav-toggle-label span {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+  }
+  
+  .nav-toggle-label span:last-child {
+    margin-bottom: 0;
+  }
+  
+  #nav-toggle {
+    display: none;
+  }
+  
+  #nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1em;
+    display: none;
+  }
+  
+  #nav-toggle:checked ~ .nav-menu {
+    display: block;
+  }
+  
+  .nav-menu li {
+    margin-bottom: 1em;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .nav-toggle-label {
+      display: none;
+    }
+    .nav-menu {
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+      background-color: transparent;
+    }
+    .nav-menu li {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    .nav-menu a {
+      color: #333;
+    }
+  }

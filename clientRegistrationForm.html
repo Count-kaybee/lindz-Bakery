@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lindz Bakery - Contact Us</title>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/mobile_nav.css">
+        <link rel="icon" type="image/png" href="images/logo_new.png">
+    </head>
+    <body>
+        <header id="header">
+            <h1>Lindz Bakery</h1>
+            <a href="index.html"><img src="images/logo_new.png" alt="Lindz Bakery Logo" class="logo"></a>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="clientRegistrationForm.html">Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="mobile">
+            <nav class="nav">
+                <input type="checkbox" id="nav-toggle" />
+                <label for="nav-toggle" class="nav-toggle-label">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+                <ul class="nav-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="clientRegistrationForm.html">Registration</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+        </div>
+
+    <div class="desktop">
+        <img src="hero.jpg" alt="Hero Image" class="hero-image">
+    </div>
+
+    <main>
+    <form class="form">
+        <h2>Client Registration Form</h2>
+        <fieldset>
+        <legend>Client Information</legend>
+        <input type="text" name="preferredName" placeholder="Preferredname"><br><br>
+        
+        <input type="text" name="fullName" placeholder="Fullname"><br><br>
+        
+        <input type="text" name="surname" placeholder="Surname"><br><br>
+        
+        <input type="text" name="idNumber" placeholder="ID Number"><br><br>
+
+        <input type="tel" name="telephoneWork" placeholder="Telephone Work"><br><br>
+        
+        <input type="tel" name="cellphoneNumber" placeholder="Cellphone Number"><br><br>
+        
+        <input type="email" name="email" placeholder="E-mail"><br><br>
+        
+        <textarea name="homeAddress" placeholder="Home Address"></textarea><br><br>
+        
+        <textarea name="postalAddress" placeholder="Postal Address"></textarea>
+        Copy home address to postal address<input type="checkbox" name="copyHomeAddress">
+        </fieldset>
+        
+        <label>Where did the user hear about the privately owned small business?</label>
+        <select name="hearAboutUs">
+          <option value="wordOfMouth">Word of mouth</option>
+          <option value="internetSearch">Internet search</option>
+          <option value="advertising">Advertising</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Twitter">Twitter</option>
+          <option value="Instagram">Instagram</option>
+        </select><br><br>
+        <fieldset>
+            <legend>Banking Details</legend>
+        <input type="text" name="creditCardName" placeholder="Name on credit card"><br><br>
+        
+        <label>Credit card type:</label>
+        <select name="creditCardType">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+          <option value="amex">American Express</option>
+        </select><br><br>
+        
+        <input type="text" name="creditCardNumber" placeholder="Credit Number"><br><br>
+        
+        <label>Expiration month/year:</label>
+        <select name="expirationMonth">
+          <option value="01">January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+        <select name="expirationYear">
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+        </select><br><br>
+        
+        <input type="text" name="cvcNumber" placeholder="CVC Number"><br><br>
+
+        </fieldset>
+        
+        <input type="text" name="username" placeholder="User Name"><br><br>
+
+        <input type="password" name="password" placeholder="Password"><br><br>
+
+        <input type="password" name="passwordConfirmation" placeholder="Password Confirmation"><br><br>
+
+        <fieldset>
+            <legend>Products and Services of Interest</legend>
+            <label>Products and Services:</label>
+            <br>
+            <input type="checkbox" name="Birthday cakes" value="Birthday cakes">Birthday cakes
+            <input type="checkbox" name="Wedding cakes" value="Wedding Cakes">Wedding Cakes
+            <input type="checkbox" name="Baby Shower cakes" value="Baby Shower cakes">Baby Shower Cakes
+            <input type="checkbox" name="Cookies" value="Cookies">Cookies
+            <input type="checkbox" name="Muffins" value="Muffins">Muffins<br>
+            <br>
+            <label>Other Products and Services:</label>
+            <textarea name="otherProductsServices"></textarea><br><br>
+          </fieldset>
+        
+        <textarea name="additionalInfo"  placeholder="Additional information about yourself"></textarea><br><br>
+
+        
+        <input type="submit" value="Register">
+      </form>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2018 Lindz Bakery</p>
+        <p>Contact Us:</p>
+        <p>Phone: <a href="tel:+27 61 512 3323">&#9742; +27 61 512 3323</a></p>
+        <p>Email: <a href="mailto:lindzradebe@gmail.com">&#9993; lindzradebe@gmail.com</a></p>    
+    </footer>
+    </body>
+
+</html>
